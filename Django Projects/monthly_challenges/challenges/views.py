@@ -9,7 +9,7 @@ monthly_challenges = {
     "march": "Learn Django for 30 minutes everyday",
     "april": "Eat No Meat For the entire month",
     "may": "Walk for at least 20 minutes everyday",
-    "june": "Learn Django for 30 minutes everyday",
+    "june": None,
     "july": "Eat No Meat For the entire month",
     "august": "Walk for at least 20 minutes everyday",
     "september": "Learn Django for 30 minutes everyday",
