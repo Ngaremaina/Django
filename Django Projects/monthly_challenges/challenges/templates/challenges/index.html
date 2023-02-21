@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<ul>
+    {% for month in months %}
+        <li><a href="{% url 'month-challenge' month %}">{{ month | title}}</a></li>
+    {% endfor %}
+    
+</ul>
+
+{% endblock %}
+    <!-- <ul type="circle">
+        <li>January</li>
+        <li>February</li>
+        <li>March</li>
+        <li>April</li>
+    </ul> -->
+    <!-- <ol start="a">
+        <li>January</li>
+        <li>February</li>
+        <li>March</li>
+        <li>April</li>
+    </ol> -->
+    
+</body>
+</html>

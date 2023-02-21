@@ -18,6 +18,12 @@ monthly_challenges = {
     "december": "Learn Django for 30 minutes everyday",
 }
 
+def index(request):
+    months=list(monthly_challenges.keys())
+    return render(request, "challenges/index.html",{
+        "months":months
+    })
+
 def monthly_challenge_by_number(request, month):
     months = list(monthly_challenges.keys())
     if month > len(months):
