@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block page_title %}Monthly challenges app{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{% static 'app.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'challenges/includes/header.css'%}">
+    {% block css_files %}
+        <link rel="stylesheet" href="{% static 'challenges/challenge.css'%}">
+    {% endblock %}
 </head>
 <body>
-    <header>
-        <h2><a href="{% url 'home-page' %}">All Challenges</a></h2>
-    </header>
+    {% include 'challenges/includes/header.html' %}
     {% block content %}
 
     {% endblock content %}
