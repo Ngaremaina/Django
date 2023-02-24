@@ -1,0 +1,4 @@
+create three templates - index.html, all-post.html and single-post.html
+and create their css files
+
+Route your blog app to your base url
