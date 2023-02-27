@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block page_title %} Home Page {% endblock %}  
+
+{% block css_files %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/index.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <!-- header -->
+
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blog/images/nature.jpg' %}" alt="Dennis Blog">
+            <h2>DENNIS MUTHUI BLOG</h2>
+        </header>
+        <p>Hi, I am Dennis Muthui and I love to blog about Tech and The World</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>Latest Thoughts</h2>
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="{% static '/blog/images/mountain.jpg' %}" alt="mountain.jpg">
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>There's nothing like the views you get when hiking in the mountains. I wasn't even prepared for what happened whilst i was enjoying the view!</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="{% static '/blog/images/nature.jpg' %}" alt="mountain.jpg">
+                        <div class="post__content">
+                            <h3>Nature At It's best</h3>
+                            <p>Nature is amazing! The amount of inspiration I get when I walk in nature is credible</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="{% static '/blog/images/coding.jpg' %}" alt="mountain.jpg">
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>Did you ever spend hours searching that one error in your code??Yep!!!... Thats whats happened yesterday</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>What I Do</h2>
+        <p>I love programming, I love to help others and I enjoy exploring new technologies in general</p>
+        <p>My goal is keep growing as a developer - and if i could help you do the same, i'd be very happy!</p>
+    </section>
+
+
+{% endblock %}
